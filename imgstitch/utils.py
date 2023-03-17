@@ -4,8 +4,8 @@ import os
 import re
 from imgstitch import exceptions
 
-MINIMUM_MATCH_POINTS = 20
-CONFIDENCE_THRESH = 30 # confidence percentage threshold of match points used for homography computation
+MINIMUM_MATCH_POINTS = 14
+CONFIDENCE_THRESH = 55 # confidence percentage threshold of match points used for homography computation
 
 def get_matches(img_a_gray, img_b_gray, num_keypoints=1000, threshold=0.8):
     '''Function to get matched keypoints from two images using ORB
